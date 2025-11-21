@@ -40,12 +40,38 @@
                         maxlength="200"
                         required
                     />
-                    <button type="submit">Find Recipes</button>
+                    <div class="form-row-right">
+                        <select name="sort_by" class="sort-select">
+                            <option value="best" {% if sort_by == "best" %}selected{% endif %}>Best match</option>
+                            <option value="least_missing" {% if sort_by == "least_missing" %}selected{% endif %}>Least missing</option>
+                            <option value="simplest" {% if sort_by == "simplest" %}selected{% endif %}>Simplest recipes</option>
+                        </select>
+                        <button type="submit" name="action" value="search">Search</button>
+                    </div>
                 </div>
                 <p class="hint">
                     Tip: separate ingredients with commas. Keep it short and simple.
                 </p>
             </form>
+
+            {% if search_history %}
+                <div class="history">
+                    <div class="history-header">
+                        <span class="history-title">Recent searches</span>
+                    </div>
+                    <div class="history-chips">
+                        {% for query in search_history %}
+                            <form method="post" class="history-form">
+                                <input type="hidden" name="ingredients" value="{{ query }}">
+                                <input type="hidden" name="sort_by" value="{{ sort_by }}">
+                                <button type="submit" name="action" value="search" class="history-chip">
+                                    🔁 {{ query }}
+                                </button>
+                            </form>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
         </section>
 
         <section class="results-section">
@@ -54,7 +80,33 @@
                 <div class="recipes-grid">
                     {% for recipe in suggestions %}
                         <article class="recipe-card">
-                            <h3 class="recipe-name">{{ recipe.name }}</h3>
+                            <div class="recipe-card-header">
+                                <h3 class="recipe-name">{{ recipe.name }}</h3>
+                                <form method="post" class="fav-form">
+                                    <input type="hidden" name="ingredients" value="{{ user_input }}">
+                                    <input type="hidden" name="sort_by" value="{{ sort_by }}">
+                                    <input type="hidden" name="recipe_name" value="{{ recipe.name }}">
+                                    <button type="submit" name="action" value="favorite" class="fav-btn">
+                                        {% if recipe.is_favourite %}
+                                            ★ Favourite
+                                        {% else %}
+                                            ☆ Save
+                                        {% endif %}
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="match-row">
+    <span class="match-label">{{ recipe.match_percent }}% match</span>
+    <div class="match-bar-outer">
+        <div class="match-bar-inner" style="width: {{ recipe.match_percent }}%;"></div>
+    </div>
+    <span class="match-meta">
+        {{ recipe.matched }}/{{ recipe.total }} ingredients
+    </span>
+</div>
+
+
                             <p class="recipe-ings">
                                 <strong>Ingredients:</strong>
                                 {{ recipe.ingredients | join(", ") }}
@@ -74,7 +126,7 @@
     </main>
 
     <footer class="footer">
-        <small>Fridge Chef · Version 2 – UI + Code Quality</small>
+        <small>Fridge Chef · Version 3 – UX, history, favourites & sorting</small>
     </footer>
 </body>
 </html>
