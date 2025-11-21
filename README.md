@@ -19,7 +19,7 @@ When you enter ingredients:
      - Ingredient list
      - Description
 
-🛠️ Installation & Setup
+Installation & Setup
 1. Clone this repository
   git clone https://github.com/your-username/fridge-chef.git
   cd fridge-chef
