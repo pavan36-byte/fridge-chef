@@ -10,7 +10,6 @@ def load_recipes():
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            # store ingredients as a list
             row["ingredients"] = [i.strip().lower() for i in row["ingredients"].split(",")]
             recipes.append(row)
     return recipes
@@ -21,11 +20,8 @@ def score_recipe(user_ings, recipe):
     recipe_ings = set(recipe["ingredients"])
     if not recipe_ings:
         return 0
-    # how many user ingredients appear in this recipe
     matches = recipe_ings & user_ings
-    # simple score: fraction of recipe ingredients you have
-    score = len(matches) / len(recipe_ings)
-    return score
+    return len(matches) / len(recipe_ings)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -39,7 +35,6 @@ def index():
         if not user_input:
             error = "Please enter at least one ingredient."
         else:
-            # parse user ingredients
             user_ings = {i.strip() for i in user_input.split(",") if i.strip()}
             if not user_ings:
                 error = "Couldn't read any ingredients. Try separating them with commas."
