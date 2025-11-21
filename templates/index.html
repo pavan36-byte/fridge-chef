@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fridge Chef</title>
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 0 15px;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            background: linear-gradient(90deg, #ff7b00, #ff006a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            text-align: center;
+            color: #444;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 16px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            background: linear-gradient(90deg, #ff7b00, #ff006a);
+            color: white;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .recipe-card {
+            border: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: white;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .recipe-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .hint {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fridge Chef</h1>
+    <p class="tagline">
+        Type what ingredients you have — I will find recipes you can make.
+    </p>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="post">
+        <input
+            type="text"
+            name="ingredients"
+            placeholder="e.g. chicken, tomato, cheese"
+            value="{{ user_input }}"
+        />
+        <button type="submit">Find Recipes</button>
+    </form>
+
+    <p class="hint">
+        Tip: separate ingredients with commas.
+    </p>
+
+    {% if suggestions %}
+        <h2>Recipes you can try:</h2>
+        {% for recipe in suggestions %}
+            <div class="recipe-card">
+                <div class="recipe-name">{{ recipe.name }}</div>
+                <div><strong>Ingredients:</strong> {{ recipe.ingredients | join(", ") }}</div>
+                <p>{{ recipe.description }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>
