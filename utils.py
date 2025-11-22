@@ -3,76 +3,99 @@ import json
 import os
 from typing import List, Dict, Tuple, Set
 
+# ---------- INGREDIENT NORMALISATION ----------
+
+NORMALISE_MAP = {
+    "tomatoes": "tomato",
+    "diced tomatoes": "tomato",
+    "fresh tomato": "tomato",
+    "eggs": "egg",
+    "egg yolk": "egg",
+    "egg whites": "egg",
+    "noodles": "noodle",
+    "spaghetti pasta": "pasta",
+    "hot chili": "chili",
+    "chilies": "chili",
+    "bell peppers": "bell pepper",
+    "capsicum": "bell pepper",
+}
+
+def normalise(ingredient: str) -> str:
+    ingredient = ingredient.strip().lower()
+    return NORMALISE_MAP.get(ingredient, ingredient)
+
 
 # ---------- DATA LOADING ----------
 
-
 def load_recipes(csv_path: str) -> List[Dict]:
-    """Load recipes from a CSV file."""
     recipes: List[Dict] = []
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            row["ingredients"] = _parse_ingredient_list(row.get("ingredients", ""))
-            row["name"] = row.get("name", "").strip()
-            row["description"] = row.get("description", "").strip()
-            recipes.append(row)
+            raw_ings = row.get("ingredients", "")
+            clean_ings = [normalise(i) for i in raw_ings.split(",") if i.strip()]
+
+            recipes.append({
+                "name": row.get("name", "").strip(),
+                "description": row.get("description", "").strip(),
+                "ingredients": clean_ings,
+                "cuisine": row.get("cuisine", "Unknown"),
+                "type": row.get("type", "Main"),
+                "difficulty": row.get("difficulty", "Easy"),
+                "time_minutes": int(row.get("time_minutes", 20)),
+            })
     return recipes
-
-
-def _parse_ingredient_list(ings: str) -> List[str]:
-    """Convert a comma-separated ingredient string into a clean list."""
-    return [i.strip().lower() for i in ings.split(",") if i.strip()]
 
 
 # ---------- STATE (HISTORY + FAVOURITES) ----------
 
-
 def load_state(path: str) -> Dict:
-    """Load search history and favourites from JSON. Returns default if missing or invalid."""
     if not os.path.exists(path):
         return {"search_history": [], "favourites": []}
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-            # Ensure keys exist
-            if "search_history" not in data:
-                data["search_history"] = []
-            if "favourites" not in data:
-                data["favourites"] = []
+            data.setdefault("search_history", [])
+            data.setdefault("favourites", [])
             return data
     except Exception:
-        # If file is corrupted or unreadable, start fresh
         return {"search_history": [], "favourites": []}
 
-
 def save_state(path: str, state: Dict) -> None:
-    """Save search history and favourites to JSON."""
     with open(path, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
 
 
-# ---------- RECOMMENDATION LOGIC ----------
+# ---------- SCORING + SUGGESTIONS ----------
 
-
-def _score_recipe(user_ings: Set[str], recipe: Dict) -> Tuple[float, int, int]:
-    """
-    Score a recipe based on ingredient overlap.
-
-    Returns:
-        score (0-1 float),
-        matched_count (int),
-        total_ingredients (int)
-    """
-    recipe_ings = set(recipe.get("ingredients", []))
+def _score_recipe(user_ings: Set[str], recipe: Dict):
+    recipe_ings = set(recipe["ingredients"])
     total = len(recipe_ings)
-    if total == 0:
-        return 0.0, 0, 0
 
     matches = user_ings & recipe_ings
-    matched_count = len(matches)
-    score = matched_count / total
-    return score, matched_count, total
+    matched = len(matches)
+    missing = list(recipe_ings - user_ings)
+    missing_count = len(missing)
+
+    score = matched / total if total else 0
+    match_percent = int(score * 100)
+
+    # Cookability classification
+    if match_percent >= 80:
+        cookability = "can_cook"
+    elif match_percent >= 50:
+        cookability = "almost"
+    else:
+        cookability = "unlikely"
+
+    return {
+        "score": score,
+        "match_percent": match_percent,
+        "matched": matched,
+        "total": total,
+        "missing": missing,
+        "cookability": cookability,
+    }
 
 
 def get_suggestions(
@@ -80,50 +103,34 @@ def get_suggestions(
     recipes: List[Dict],
     sort_by: str,
     favourites: List[str],
-    limit: int = 5,
-) -> Tuple[List[Dict], str | None]:
-    """
-    Given a raw ingredient string and recipe list, return enriched suggestions
-    and an optional error message.
-    """
-    # Parse user ingredients
-    user_ings: Set[str] = {i.strip().lower() for i in user_input.split(",") if i.strip()}
+    limit: int = 10,
+):
+
+    user_ings = {normalise(i.strip()) for i in user_input.split(",") if i.strip()}
     if not user_ings:
-        return [], "Couldn't read any ingredients. Try separating them with commas."
+        return [], "Couldn't read any ingredients. Try commas."
 
-    enriched: List[Dict] = []
+    enriched = []
+
     for recipe in recipes:
-        score, matched_count, total_ings = _score_recipe(user_ings, recipe)
-        if score <= 0:
-            continue
+        scoring = _score_recipe(user_ings, recipe)
 
-        missing = max(total_ings - matched_count, 0)
-        match_percent = int(round(score * 100))
-
-        enriched.append(
-            {
-                "name": recipe.get("name", ""),
-                "description": recipe.get("description", ""),
-                "ingredients": recipe.get("ingredients", []),
-                "score": score,
-                "match_percent": match_percent,
-                "matched": matched_count,
-                "total": total_ings,
-                "missing": missing,
-                "is_favourite": recipe.get("name", "") in favourites,
-            }
-        )
+        if scoring["score"] > 0:
+            enriched.append({
+                **recipe,
+                **scoring,
+                "is_favourite": recipe["name"] in favourites,
+            })
 
     if not enriched:
-        return [], "No matching recipes found. Try different ingredients or add more."
+        return [], "No matching recipes found."
 
     # Sorting logic
-    sort_by = (sort_by or "best").lower()
     if sort_by == "least_missing":
-        enriched.sort(key=lambda r: (r["missing"], -r["score"], r["total"]))
+        enriched.sort(key=lambda x: (len(x["missing"]), -x["score"]))
     elif sort_by == "simplest":
-        enriched.sort(key=lambda r: (r["total"], -r["score"], r["missing"]))
-    else:  # "best"
-        enriched.sort(key=lambda r: (-r["score"], r["missing"], r["total"]))
+        enriched.sort(key=lambda x: (x["total"], -x["score"]))
+    else:
+        enriched.sort(key=lambda x: (-x["score"], x["total"]))
 
     return enriched[:limit], None

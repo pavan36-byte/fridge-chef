@@ -19,6 +19,7 @@
     </header>
 
     <main class="main">
+        <!-- Input / controls -->
         <section class="input-section">
             {% if error %}
                 <div class="alert alert-error">
@@ -74,6 +75,7 @@
             {% endif %}
         </section>
 
+        <!-- Results -->
         <section class="results-section">
             {% if suggestions %}
                 <h2 class="section-title">Recipes you can try:</h2>
@@ -96,17 +98,43 @@
                                 </form>
                             </div>
 
+                            <!-- Match percentage bar -->
                             <div class="match-row">
-    <span class="match-label">{{ recipe.match_percent }}% match</span>
-    <div class="match-bar-outer">
-        <div class="match-bar-inner" style="width: {{ recipe.match_percent }}%;"></div>
-    </div>
-    <span class="match-meta">
-        {{ recipe.matched }}/{{ recipe.total }} ingredients
-    </span>
-</div>
+                                <span class="match-label">{{ recipe.match_percent }}% match</span>
+                                <div class="match-bar-outer">
+                                    <div class="match-bar-inner" style="width: {{ recipe.match_percent }}%;"></div>
+                                </div>
+                                <span class="match-meta">
+                                    {{ recipe.matched }}/{{ recipe.total }} ingredients
+                                </span>
+                            </div>
 
+                            <!-- Cookability + missing ingredients (V4) -->
+                            <div class="cookability">
+                                {% if recipe.cookability == "can_cook" %}
+                                    <span class="cook-green">✅ You can cook this!</span>
+                                {% elif recipe.cookability == "almost" %}
+                                    <span class="cook-yellow">🟡 Almost — missing {{ recipe.missing|length }} ingredient{% if recipe.missing|length != 1 %}s{% endif %}</span>
+                                {% else %}
+                                    <span class="cook-red">🔴 Missing too many ingredients</span>
+                                {% endif %}
+                            </div>
 
+                            {% if recipe.missing %}
+                                <p class="missing-list">
+                                    <strong>Missing:</strong> {{ recipe.missing | join(", ") }}
+                                </p>
+                            {% endif %}
+
+                            <!-- Meta info: cuisine / type / difficulty / time -->
+                            <p class="meta-line">
+                                <span>🌍 {{ recipe.cuisine }}</span> ·
+                                <span>🍽 {{ recipe.type }}</span> ·
+                                <span>⚙ {{ recipe.difficulty }}</span> ·
+                                <span>⏱ {{ recipe.time_minutes }} min</span>
+                            </p>
+
+                            <!-- Ingredients & description -->
                             <p class="recipe-ings">
                                 <strong>Ingredients:</strong>
                                 {{ recipe.ingredients | join(", ") }}
@@ -126,7 +154,7 @@
     </main>
 
     <footer class="footer">
-        <small>Fridge Chef · Version 3 – UX, history, favourites & sorting</small>
+        <small>Fridge Chef · Version 4 – Dataset, cookability & smarter matching</small>
     </footer>
 </body>
 </html>

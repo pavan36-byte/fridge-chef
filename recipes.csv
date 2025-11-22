@@ -1,95 +1,264 @@
-name,ingredients,description
-Margherita Pizza,"flour, yeast, water, salt, tomato, mozzarella, basil","Classic Italian pizza with tomatoes, basil, and melted mozzarella."
-Pepperoni Pizza,"flour, yeast, tomato, mozzarella, pepperoni, salt","Crispy pizza topped with spicy pepperoni slices."
-BBQ Chicken Pizza,"flour, yeast, chicken, bbq sauce, mozzarella, onion","Sweet and tangy BBQ pizza with chicken and cheese."
-Veggie Pizza,"flour, yeast, tomato, mozzarella, pepper, onion, mushroom","Fresh vegetable pizza loaded with colourful toppings."
-Garlic Bread,"bread, butter, garlic, parsley, salt","Buttery toasted bread infused with garlic and herbs."
-Tomato Soup,"tomato, onion, garlic, cream, salt, pepper","Smooth and comforting tomato soup."
-Chicken Soup,"chicken, carrot, onion, garlic, water, salt, pepper","Warm homemade chicken soup."
-Minestrone Soup,"tomato, pasta, beans, carrot, celery, onion, garlic","Hearty Italian soup with vegetables and pasta."
-Pumpkin Soup,"pumpkin, onion, garlic, cream, salt, pepper","Creamy soup made from roasted pumpkin."
-Broccoli Soup,"broccoli, cream, onion, garlic, salt, pepper","Rich green soup made with fresh broccoli."
-Classic Burger,"beef, bun, lettuce, tomato, cheese, onion, salt, pepper","Juicy beef burger with fresh toppings."
-Cheese Burger,"beef, bun, cheddar, lettuce, tomato, onion","Burger topped with melted cheddar cheese."
-Chicken Burger,"chicken, bun, lettuce, tomato, mayo, salt","Crispy chicken burger with fresh salad."
-Veggie Burger,"beans, bun, lettuce, tomato, onion, spices","Plant-based patty burger with vegetables."
-Fish Burger,"fish, bun, lettuce, tomato, tartar sauce","Light and crispy fried fish burger."
-Spaghetti Bolognese,"pasta, beef, tomato, onion, garlic, olive oil","Classic Italian meat sauce served with spaghetti."
-Carbonara,"pasta, egg, bacon, cheese, pepper","Creamy pasta made with eggs, cheese, and crispy bacon."
-Pesto Pasta,"pasta, basil, garlic, pine nuts, cheese, olive oil","Fresh green pasta with basil pesto."
-Chicken Alfredo,"pasta, chicken, cream, garlic, cheese","Creamy Alfredo pasta with chicken."
-Tuna Pasta,"pasta, tuna, mayo, onion, salt, pepper","Simple pasta tossed with tuna and mayo."
-Beef Tacos,"beef, tortilla, lettuce, tomato, cheese, spices","Soft tortillas filled with seasoned beef."
-Chicken Tacos,"chicken, tortilla, lettuce, tomato, cheese, spices","Mexican-style chicken tacos."
-Veggie Tacos,"beans, tortilla, lettuce, tomato, corn, spices","Healthy vegetarian tacos."
-Fish Tacos,"fish, tortilla, lettuce, lime, spices","Crispy fish tacos with fresh lime."
-Quesadilla,"tortilla, cheese, chicken, pepper, onion","Grilled tortilla stuffed with cheese and fillings."
-Chicken Stir Fry,"chicken, broccoli, pepper, soy sauce, garlic, onion","Quick stir fry with vegetables."
-Beef Stir Fry,"beef, broccoli, soy sauce, garlic, onion","Savory beef stir fry with soy glaze."
-Veggie Stir Fry,"broccoli, carrot, pepper, soy sauce, onion, garlic","Healthy vegetable stir fry."
-Sweet and Sour Chicken,"chicken, pepper, pineapple, vinegar, sugar, soy sauce","Tangy sweet and sour glazed chicken."
-Egg Fried Rice,"rice, egg, peas, soy sauce, garlic, onion","Chinese-style fried rice with eggs."
-Chicken Fried Rice,"rice, chicken, soy sauce, egg, peas, onion","Savory fried rice with chicken."
-Veg Fried Rice,"rice, carrot, peas, soy sauce, onion","Simple vegetable fried rice."
-Pad Thai,"noodles, egg, chicken, peanuts, soy sauce, lime","Thai stir-fried noodles with chicken and peanuts."
-Ramen Bowl,"noodles, egg, broth, chicken, onion, soy sauce","Warm Japanese noodle soup."
-Sushi Rolls,"rice, seaweed, cucumber, avocado, fish","Japanese sushi rolls with fresh fillings."
-Teriyaki Chicken,"chicken, soy sauce, sugar, garlic, rice","Sticky teriyaki chicken served with rice."
-Katsu Curry,"chicken, breadcrumbs, curry sauce, rice","Crispy chicken with Japanese curry."
-Chicken Curry,"chicken, tomato, spices, onion, garlic, rice","Mild Indian chicken curry."
-Vegetable Curry,"potato, carrot, peas, tomato, spices","Comforting vegetable curry."
-Beef Curry,"beef, tomato, onion, garlic, spices","Rich and hearty beef curry."
-Lentil Curry,"lentils, tomato, onion, garlic, spices","Protein-packed lentil curry."
-Butter Chicken,"chicken, butter, cream, tomato, spices","Creamy Indian butter chicken."
-Chicken Wrap,"chicken, tortilla, lettuce, tomato, mayo","Quick chicken wrap."
-Veggie Wrap,"lettuce, tomato, cucumber, tortilla, cheese","Fresh vegetable wrap."
-Falafel Wrap,"falafel, tortilla, lettuce, tomato, yogurt","Middle Eastern falafel wrap."
-Shawarma Wrap,"chicken, spices, tortilla, lettuce, garlic sauce","Street-style shawarma wrap."
-Greek Salad,"tomato, cucumber, feta, olive, onion","Refreshing Greek salad."
-Caesar Salad,"lettuce, chicken, croutons, cheese, dressing","Crisp salad with Caesar dressing."
-Garden Salad,"lettuce, tomato, cucumber, carrot","Simple fresh salad."
-Pasta Salad,"pasta, tomato, cucumber, mayo, pepper","Cold pasta salad."
-Chicken Salad,"chicken, lettuce, tomato, cucumber, dressing","Healthy chicken salad."
-Chocolate Cake,"flour, sugar, cocoa powder, egg, butter","Soft and rich chocolate cake."
-Vanilla Cake,"flour, sugar, egg, butter, vanilla","Light vanilla sponge cake."
-Brownies,"flour, sugar, cocoa powder, butter, egg","Dense chocolaty brownies."
-Banana Bread,"banana, flour, sugar, egg, butter","Moist banana loaf."
-Pancakes,"flour, milk, egg, sugar, butter","Fluffy breakfast pancakes."
-Waffles,"flour, milk, egg, butter, sugar","Crispy homemade waffles."
-French Toast,"bread, egg, milk, sugar, cinnamon","Golden fried French toast."
-Apple Pie,"apple, flour, butter, sugar, cinnamon","Classic apple pie dessert."
-Chocolate Chip Cookies,"flour, butter, sugar, chocolate chips, egg","Soft cookies with chocolate chips."
-Mug Cake,"flour, sugar, cocoa powder, milk, butter","Quick microwaved chocolate cake."
-Fruit Salad,"apple, banana, grape, orange, strawberry","Mixed fresh fruits."
-Yogurt Parfait,"yogurt, granola, honey, berries","Healthy layered parfait."
-Smoothie Bowl,"banana, berries, yogurt, oats","Thick blended fruit bowl."
-Strawberry Smoothie,"strawberry, milk, sugar","Refreshing strawberry drink."
-Banana Smoothie,"banana, milk, honey","Simple banana smoothie."
-Chicken Sandwich,"chicken, bread, lettuce, tomato, mayo","Classic chicken sandwich."
-Egg Sandwich,"egg, bread, mayo, pepper","Simple protein-packed sandwich."
-Ham Sandwich,"ham, bread, cheese, lettuce","Quick ham and cheese sandwich."
-Tuna Sandwich,"tuna, bread, mayo, lettuce","Creamy tuna sandwich."
-Grilled Cheese,"bread, cheese, butter","Golden grilled cheese sandwich."
-Omelette,"egg, milk, butter, cheese, salt","Simple cheese omelette."
-Scrambled Eggs,"egg, butter, salt, pepper","Creamy scrambled eggs."
-Frittata,"egg, cheese, tomato, pepper, onion","Baked egg dish with vegetables."
-Chicken Nuggets,"chicken, breadcrumbs, egg, flour","Crispy homemade nuggets."
-Fish Fingers,"fish, breadcrumbs, flour, egg","Easy crunchy fish sticks."
-Roast Chicken,"chicken, salt, pepper, garlic, butter","Oven-roasted chicken."
-Beef Stew,"beef, carrot, potato, onion, garlic","Slow-cooked beef stew."
-Mashed Potatoes,"potato, butter, milk, salt","Creamy mashed potatoes."
-Roast Potatoes,"potato, oil, salt, pepper","Crispy roasted potatoes."
-Grilled Salmon,"salmon, lemon, salt, pepper","Simple grilled salmon."
-Baked Cod,"cod, lemon, garlic, butter","Soft baked white fish."
-Shrimp Pasta,"shrimp, pasta, garlic, butter, lemon","Creamy pasta with shrimp."
-Chicken Skewers,"chicken, pepper, onion, spices","Grilled chicken skewers."
-Beef Kebabs,"beef, onion, pepper, spices","Juicy grilled kebabs."
-Stir Fry Noodles,"noodles, soy sauce, garlic, onion, carrot","Quick noodle stir fry."
-Vegetable Soup,"carrot, potato, onion, garlic, celery, water","Simple vegetable soup."
-Chili Con Carne,"beef, beans, tomato, onion, spices","Spicy beef and bean stew."
-Shepherd's Pie,"beef, potato, onion, carrot, butter","Classic layered potato and beef pie."
-Mac and Cheese,"pasta, cheese, milk, butter, flour","Creamy mac and cheese."
-Chicken Nuggets Wrap,"chicken, tortilla, lettuce, mayo","Crunchy chicken wrap."
-Fried Chicken,"chicken, flour, spices, oil","Crispy fried chicken."
-Garlic Butter Pasta,"pasta, garlic, butter, cheese","Simple but flavourful garlic pasta."
-Tomato Pasta,"pasta, tomato, onion, garlic","Basic tomato pasta."
+name,ingredients,description,cuisine,type,difficulty,time_minutes
+
+name,ingredients,description,cuisine,type,difficulty,time_minutes
+Margherita Pizza,"flour, yeast, water, salt, tomato, mozzarella, basil","Classic Italian pizza with tomato, mozzarella and basil.",Italian,Main,Easy,25
+Pepperoni Pizza,"flour, yeast, water, salt, tomato, mozzarella, pepperoni","Crispy pizza topped with spicy pepperoni.",Italian,Main,Easy,25
+BBQ Chicken Pizza,"flour, yeast, water, salt, bbq sauce, mozzarella, chicken, red onion","Sweet and smoky BBQ chicken pizza.",American,Main,Medium,30
+Veggie Supreme Pizza,"flour, yeast, water, salt, tomato, mozzarella, bell pepper, sweetcorn, mushroom, red onion, olive","Loaded vegetarian pizza with colourful veg.",Italian,Main,Medium,30
+Garlic Bread,"bread, butter, garlic, parsley, salt","Toasted bread with garlic butter and herbs.",Italian,Side,Easy,10
+Tomato Soup,"tomato, onion, garlic, carrot, vegetable stock, cream, salt, pepper","Smooth and comforting tomato soup.",International,Soup,Easy,20
+Chicken Noodle Soup,"chicken, egg noodle, carrot, celery, onion, chicken stock, garlic, salt, pepper","Classic chicken noodle soup.",American,Soup,Easy,30
+Minestrone Soup,"tomato, carrot, celery, onion, garlic, pasta, cannellini bean, courgette, vegetable stock, basil","Hearty Italian vegetable and pasta soup.",Italian,Soup,Medium,35
+Pumpkin Soup,"pumpkin, onion, garlic, vegetable stock, cream, nutmeg, salt, pepper","Creamy autumn pumpkin soup.",International,Soup,Easy,25
+Broccoli Cheddar Soup,"broccoli, cheddar, milk, onion, butter, flour, chicken stock, salt, pepper","Rich broccoli and cheddar cheese soup.",American,Soup,Medium,30
+Classic Beef Burger,"beef mince, salt, pepper, burger bun, lettuce, tomato, red onion, ketchup","Juicy beef burger with fresh toppings.",American,Main,Easy,20
+Cheese Burger,"beef mince, salt, pepper, burger bun, cheddar, lettuce, tomato, mustard","Beef burger topped with melted cheddar.",American,Main,Easy,20
+Chicken Burger,"chicken breast, burger bun, lettuce, tomato, mayo, breadcrumb, egg, flour","Crispy chicken burger with salad.",American,Main,Medium,30
+Veggie Bean Burger,"kidney bean, breadcrumb, egg, onion, garlic, cumin, burger bun, lettuce, tomato","Spiced bean patty burger.",International,Main,Medium,30
+Falafel Burger,"chickpea, onion, garlic, parsley, cumin, coriander, flour, burger bun, lettuce, tomato, tahini","Middle Eastern falafel burger.",Middle Eastern,Main,Medium,30
+Spaghetti Bolognese,"spaghetti, beef mince, tomato, onion, garlic, carrot, celery, olive oil, salt, pepper","Classic meat sauce with spaghetti.",Italian,Main,Medium,35
+Spaghetti Carbonara,"spaghetti, egg, pancetta, parmesan, black pepper, salt","Creamy egg and pancetta pasta.",Italian,Main,Medium,20
+Pesto Pasta,"pasta, basil, garlic, pine nut, parmesan, olive oil, salt","Pasta with fresh basil pesto sauce.",Italian,Main,Easy,20
+Chicken Alfredo Pasta,"pasta, chicken breast, cream, garlic, parmesan, butter, salt, pepper","Creamy Alfredo pasta with chicken.",Italian,Main,Medium,25
+Tuna Sweetcorn Pasta,"pasta, tuna, sweetcorn, mayo, spring onion, salt, pepper","Cold pasta salad with tuna and sweetcorn.",British,Main,Easy,15
+Chicken Tacos,"tortilla, chicken breast, taco seasoning, lettuce, tomato, cheddar, sour cream","Mexican-style chicken tacos.",Mexican,Main,Easy,20
+Beef Tacos,"tortilla, beef mince, taco seasoning, lettuce, tomato, cheddar, salsa","Crispy beef mince tacos.",Mexican,Main,Easy,20
+Veggie Tacos,"tortilla, black bean, sweetcorn, bell pepper, onion, lettuce, salsa","Vegetarian black bean tacos.",Mexican,Main,Easy,20
+Fish Tacos,"tortilla, white fish, lime, cabbage, mayo, yogurt, chili powder","Light and tangy fish tacos.",Mexican,Main,Medium,25
+Quesadilla,"tortilla, cheddar, mozzarella, bell pepper, onion, chicken breast","Griddled tortilla with melty cheese and fillings.",Mexican,Main,Easy,15
+Chicken Stir Fry,"chicken breast, broccoli, carrot, bell pepper, soy sauce, garlic, ginger, spring onion, vegetable oil","Quick chicken and veg stir fry.",Chinese,Main,Easy,20
+Beef Stir Fry,"beef strips, broccoli, bell pepper, soy sauce, garlic, ginger, sesame oil","Savory beef stir fry with veg.",Chinese,Main,Medium,20
+Tofu Stir Fry,"firm tofu, broccoli, carrot, bell pepper, soy sauce, garlic, ginger, sesame seed","Plant-based tofu and veg stir fry.",Asian,Main,Medium,20
+Sweet and Sour Chicken,"chicken breast, bell pepper, onion, pineapple, vinegar, ketchup, soy sauce, sugar, cornflour","Tangy sweet and sour chicken.",Chinese,Main,Medium,30
+Egg Fried Rice,"rice, egg, spring onion, peas, carrot, soy sauce, vegetable oil","Chinese-style egg fried rice.",Chinese,Main,Easy,15
+Chicken Fried Rice,"rice, chicken breast, egg, peas, carrot, soy sauce, vegetable oil, spring onion","Fried rice with chicken and veg.",Chinese,Main,Easy,20
+Veg Fried Rice,"rice, carrot, peas, sweetcorn, spring onion, soy sauce, vegetable oil","Simple vegetable fried rice.",Chinese,Main,Easy,15
+Pad Thai,"rice noodle, chicken breast, egg, bean sprout, peanut, lime, fish sauce, sugar, garlic","Sweet and savoury Thai noodle stir fry.",Thai,Main,Medium,25
+Ramen Bowl,"ramen noodle, chicken stock, soy sauce, egg, spring onion, nori, mushroom","Comforting Japanese ramen bowl.",Japanese,Main,Medium,30
+Salmon Teriyaki,"salmon fillet, soy sauce, mirin, sugar, garlic, ginger, spring onion, rice","Glazed teriyaki salmon with rice.",Japanese,Main,Medium,25
+Chicken Katsu Curry,"chicken breast, breadcrumb, egg, flour, curry sauce, rice, carrot, potato, onion","Crispy katsu chicken with curry sauce.",Japanese,Main,Medium,35
+Vegetable Katsu Curry,"aubergine, sweet potato, breadcrumb, egg, flour, curry sauce, rice","Crispy veg katsu with curry.",Japanese,Main,Medium,35
+Chicken Curry,"chicken breast, onion, garlic, ginger, tomato, curry powder, chili, yogurt, coriander","Mild Indian-style chicken curry.",Indian,Main,Medium,35
+Lentil Dahl,"red lentil, onion, garlic, ginger, tomato, turmeric, cumin, coriander, chili, ghee","Creamy spiced lentil dahl.",Indian,Main,Easy,30
+Chana Masala,"chickpea, onion, garlic, ginger, tomato, garam masala, chili, coriander","Spiced chickpea curry.",Indian,Main,Medium,30
+Saag Paneer,"spinach, paneer, onion, garlic, ginger, garam masala, cream","Spinach curry with paneer cheese.",Indian,Main,Medium,30
+Butter Chicken,"chicken thigh, butter, cream, tomato, garlic, ginger, garam masala, chili","Rich creamy butter chicken.",Indian,Main,Medium,40
+Greek Salad,"tomato, cucumber, red onion, kalamata olive, feta, olive oil, oregano","Refreshing Greek salad with feta.",Greek,Side,Easy,15
+Caesar Salad,"lettuce, chicken breast, crouton, parmesan, caesar dressing, bacon","Classic chicken Caesar salad.",American,Main,Easy,20
+Caprese Salad,"tomato, mozzarella, basil, olive oil, balsamic vinegar, salt","Simple Italian tomato and mozzarella salad.",Italian,Starter,Easy,10
+Roast Chicken,"whole chicken, butter, garlic, lemon, thyme, salt, pepper","Oven-roasted whole chicken.",British,Main,Medium,80
+Roast Potatoes,"potato, vegetable oil, salt, pepper, rosemary","Crispy roast potatoes.",British,Side,Easy,50
+Mashed Potatoes,"potato, butter, milk, salt, pepper","Creamy mashed potatoes.",British,Side,Easy,25
+Beef Stew,"beef chuck, carrot, potato, onion, celery, beef stock, tomato paste, bay leaf","Slow-cooked beef stew.",British,Main,Hard,120
+Shepherd's Pie,"lamb mince, onion, carrot, peas, beef stock, mashed potato, butter","Classic lamb mince pie topped with mash.",British,Main,Medium,60
+Chili Con Carne,"beef mince, kidney bean, tomato, onion, garlic, chili powder, cumin","Spicy beef and bean chili.",Tex-Mex,Main,Medium,45
+Mac and Cheese,"macaroni, cheddar, milk, butter, flour, salt, pepper","Baked macaroni and cheese.",American,Main,Easy,30
+Baked Salmon,"salmon fillet, lemon, garlic, butter, dill, salt, pepper","Oven-baked salmon with lemon and dill.",International,Main,Easy,25
+Grilled Chicken Skewers,"chicken breast, bell pepper, red onion, olive oil, paprika, garlic, lemon","Grilled chicken and veg skewers.",Mediterranean,Main,Medium,25
+Beef Kebabs,"beef chunks, bell pepper, red onion, garlic, paprika, olive oil","Grilled beef kebabs.",Middle Eastern,Main,Medium,25
+Veggie Buddha Bowl,"quinoa, chickpea, roasted sweet potato, avocado, spinach, tahini, lemon","Colourful grain bowl with veg and chickpeas.",International,Main,Easy,25
+Omelette,"egg, milk, butter, cheddar, salt, pepper","Simple cheese omelette.",International,Main,Easy,10
+Scrambled Eggs on Toast,"egg, butter, milk, salt, pepper, bread","Creamy scrambled eggs on toast.",British,Breakfast,Easy,10
+Pancakes,"flour, milk, egg, sugar, butter, baking powder","Fluffy breakfast pancakes.",American,Breakfast,Easy,20
+Waffles,"flour, milk, egg, sugar, butter, baking powder","Crispy homemade waffles.",American,Breakfast,Medium,25
+French Toast,"bread, egg, milk, sugar, cinnamon, butter","Eggy fried bread with cinnamon.",French,Breakfast,Easy,15
+Banana Bread,"banana, flour, sugar, egg, butter, baking powder, cinnamon","Moist banana loaf cake.",International,Dessert,Medium,60
+Chocolate Brownies,"flour, cocoa powder, sugar, egg, butter, chocolate, salt","Rich chocolate brownies.",American,Dessert,Medium,35
+Chocolate Chip Cookies,"flour, butter, sugar, brown sugar, egg, chocolate chip, baking soda","Crispy-edged chewy cookies.",American,Dessert,Easy,25
+Apple Pie,"apple, flour, butter, sugar, cinnamon, nutmeg, egg","Classic sweet apple pie.",American,Dessert,Hard,75
+Fruit Salad,"strawberry, blueberry, grape, apple, orange, kiwi, honey, mint","Mixed fresh fruit salad.",International,Dessert,Easy,15
+Yogurt Parfait,"yogurt, granola, strawberry, blueberry, honey","Layered yogurt and fruit parfait.",International,Breakfast,Easy,10
+Strawberry Smoothie,"strawberry, banana, milk, yogurt, honey","Creamy strawberry banana smoothie.",International,Drink,Easy,5
+Green Smoothie,"spinach, banana, apple, yogurt, water, honey","Healthy green smoothie drink.",International,Drink,Easy,5
+Tuna Sandwich,"tuna, mayo, sweetcorn, lettuce, bread, butter","Tuna mayo sandwich.",British,Lunch,Easy,10
+Ham and Cheese Sandwich,"ham, cheddar, lettuce, tomato, bread, butter","Simple ham and cheese sandwich.",International,Lunch,Easy,10
+Grilled Cheese Sandwich,"bread, cheddar, butter","Golden pan-fried cheese sandwich.",American,Lunch,Easy,10
+Chicken Wrap,"tortilla, chicken breast, lettuce, tomato, mayo, cheddar","Cold chicken salad wrap.",International,Lunch,Easy,15
+Falafel Wrap,"falafel, tortilla, lettuce, tomato, cucumber, yogurt, tahini","Middle Eastern falafel wrap.",Middle Eastern,Lunch,Medium,20
+Shakshuka,"egg, tomato, onion, bell pepper, garlic, chili, cumin, paprika","Eggs poached in spiced tomato sauce.",Middle Eastern,Main,Medium,25
+Veggie Lasagne,"lasagne sheet, courgette, aubergine, tomato, mozzarella, ricotta, spinach","Layered vegetable pasta bake.",Italian,Main,Hard,70
+Beef Lasagne,"lasagne sheet, beef mince, tomato, onion, garlic, white sauce, mozzarella","Baked pasta with beef ragu and cheese.",Italian,Main,Hard,75
+Stuffed Peppers,"bell pepper, rice, beef mince, onion, tomato, cheddar, garlic","Baked peppers stuffed with rice and beef.",International,Main,Medium,45
+Stuffed Mushrooms,"mushroom, breadcrumb, garlic, parsley, parmesan, cream cheese","Baked mushrooms stuffed with cheesy crumbs.",International,Starter,Easy,25
+Chicken Caesar Wrap,"tortilla, chicken breast, lettuce, parmesan, caesar dressing, bacon","Wrap version of chicken Caesar salad.",American,Lunch,Easy,20
+Chicken Fajitas,"chicken breast, bell pepper, red onion, fajita seasoning, tortilla, lime, sour cream","Sizzling chicken strips with peppers and onions in warm tortillas.",Mexican,Main,Easy,25
+Steak Fajitas,"beef steak, bell pepper, red onion, fajita seasoning, tortilla, lime","Juicy sliced steak with peppers in tortillas.",Mexican,Main,Medium,30
+Veggie Fajitas,"bell pepper, red onion, courgette, mushroom, fajita seasoning, tortilla","Colourful grilled veg in fajita spices.",Mexican,Main,Easy,25
+Pulled Pork Tacos,"pork shoulder, bbq sauce, tortilla, red cabbage, lime, coriander","Slow-cooked pulled pork served in tacos.",Mexican,Main,Hard,240
+Black Bean Burrito,"tortilla, black bean, rice, cheddar, salsa, lettuce, sour cream","Hearty vegetarian burrito packed with beans and rice.",Mexican,Main,Medium,25
+Chicken Burrito,"tortilla, chicken breast, rice, black bean, cheddar, salsa, lettuce","Loaded chicken burrito with rice and beans.",Mexican,Main,Medium,30
+Beef Burrito Bowl,"rice, beef mince, black bean, sweetcorn, salsa, lettuce, cheddar","Deconstructed burrito bowl without the wrap.",Mexican,Main,Easy,25
+Fish Burrito,"tortilla, white fish, rice, cabbage, lime, mayo, chili powder","Flaky fish wrapped with rice and crunchy slaw.",Mexican,Main,Medium,30
+Chicken Enchiladas,"tortilla, chicken breast, enchilada sauce, cheddar, spring onion","Baked tortillas filled with chicken and sauce.",Mexican,Main,Medium,35
+Cheese Enchiladas,"tortilla, cheddar, mozzarella, enchilada sauce, spring onion","Cheesy baked enchiladas with rich sauce.",Mexican,Main,Easy,30
+Tomato Bruschetta,"baguette, tomato, garlic, basil, olive oil, balsamic vinegar, salt","Toasted bread topped with fresh tomato mixture.",Italian,Starter,Easy,15
+Garlic Mushroom Bruschetta,"baguette, mushroom, garlic, parsley, butter, olive oil","Garlic mushrooms on toasted bread slices.",Italian,Starter,Easy,20
+Panzanella Salad,"bread, tomato, cucumber, red onion, basil, olive oil, vinegar","Tuscan bread and tomato salad.",Italian,Side,Easy,20
+Risotto Milanese,"arborio rice, onion, butter, white wine, chicken stock, saffron, parmesan","Creamy saffron risotto.",Italian,Main,Hard,40
+Mushroom Risotto,"arborio rice, mushroom, onion, garlic, white wine, vegetable stock, parmesan","Creamy risotto with sautéed mushrooms.",Italian,Main,Hard,40
+Lemon Chicken Orzo,"chicken breast, orzo, lemon, garlic, spinach, chicken stock, parmesan","One-pan lemony chicken and orzo pasta.",Mediterranean,Main,Medium,30
+Pasta Primavera,"pasta, broccoli, carrot, peas, courgette, cream, garlic, parmesan","Creamy pasta with spring vegetables.",Italian,Main,Medium,25
+Four Cheese Pasta Bake,"pasta, cheddar, mozzarella, parmesan, ricotta, milk, butter, flour","Baked pasta with a rich four-cheese sauce.",Italian,Main,Medium,35
+Spinach Ricotta Ravioli,"ravioli, spinach, ricotta, butter, sage, parmesan","Spinach and ricotta pasta with sage butter.",Italian,Main,Medium,25
+Seafood Spaghetti,"spaghetti, prawn, mussel, white wine, garlic, tomato, parsley, olive oil","Seafood pasta in tomato and wine sauce.",Italian,Main,Hard,35
+Shrimp Scampi,"prawn, garlic, butter, white wine, lemon, parsley, spaghetti","Garlicky prawns with pasta in lemon butter sauce.",Italian,Main,Medium,25
+Chicken Piccata,"chicken breast, flour, butter, lemon, caper, chicken stock, parsley","Pan-fried chicken in lemon caper sauce.",Italian,Main,Medium,25
+Chicken Marsala,"chicken breast, mushroom, marsala wine, butter, flour, chicken stock","Chicken cooked in marsala wine sauce with mushrooms.",Italian,Main,Medium,30
+Osso Buco,"veal shank, carrot, celery, onion, tomato, white wine, beef stock","Slow-braised veal shanks with vegetables.",Italian,Main,Hard,150
+Lamb Ragu,"lamb mince, onion, carrot, celery, tomato, red wine, pappardelle, parmesan","Rich lamb ragu served over wide pasta.",Italian,Main,Hard,90
+Chicken Shawarma Bowl,"chicken thigh, shawarma spice, rice, lettuce, tomato, cucumber, yogurt, garlic","Spiced chicken served with rice and salad.",Middle Eastern,Main,Medium,30
+Lamb Shawarma Wrap,"lamb, shawarma spice, tortilla, lettuce, tomato, tahini, yogurt","Lamb shawarma in a wrap.",Middle Eastern,Main,Medium,30
+Beef Kofta,"beef mince, onion, garlic, parsley, cumin, coriander, chili, flatbread, yogurt","Spiced beef mince shaped into skewers.",Middle Eastern,Main,Medium,25
+Chicken Kofta,"chicken mince, onion, garlic, parsley, cumin, coriander, chili, flatbread, hummus","Spiced chicken mince kofta.",Middle Eastern,Main,Medium,25
+Hummus Bowl,"chickpea, tahini, lemon, garlic, olive oil, paprika, flatbread, cucumber, tomato","Creamy hummus served with salad and bread.",Middle Eastern,Main,Easy,20
+Baba Ganoush,"aubergine, tahini, lemon, garlic, olive oil, parsley, salt","Smoky roasted aubergine dip.",Middle Eastern,Side,Medium,30
+Tabbouleh,"bulgur wheat, parsley, mint, tomato, cucumber, lemon, olive oil, spring onion","Fresh herb and bulgur salad.",Middle Eastern,Side,Easy,25
+Fattoush Salad,"lettuce, tomato, cucumber, radish, flatbread, sumac, lemon, olive oil","Crisp salad with toasted flatbread.",Middle Eastern,Side,Easy,20
+Moroccan Chickpea Stew,"chickpea, carrot, courgette, tomato, onion, garlic, cumin, cinnamon, coriander, couscous","Warm spiced chickpea and veg stew.",Moroccan,Main,Medium,35
+Lamb Tagine,"lamb, apricot, almond, onion, garlic, cinnamon, cumin, tomato, couscous","Slow-cooked lamb with fruit and spices.",Moroccan,Main,Hard,120
+Harira Soup,"lentil, chickpea, tomato, onion, celery, coriander, cumin, cinnamon","Traditional Moroccan lentil and chickpea soup.",Moroccan,Soup,Medium,45
+Beef Pho,"rice noodle, beef brisket, beef stock, ginger, star anise, cinnamon, fish sauce, bean sprout, lime, basil","Vietnamese noodle soup with aromatic broth.",Vietnamese,Main,Hard,180
+Chicken Pho,"rice noodle, chicken, chicken stock, ginger, star anise, fish sauce, bean sprout, lime, coriander","Lighter pho with chicken.",Vietnamese,Main,Medium,90
+Banh Mi Sandwich,"baguette, pork, carrot, cucumber, coriander, chili, mayo, soy sauce","Crispy bread with marinated pork and pickled veg.",Vietnamese,Lunch,Medium,30
+Spring Rolls,"rice paper, lettuce, prawn, rice noodle, carrot, cucumber, mint, peanut sauce","Fresh Vietnamese rolls with dipping sauce.",Vietnamese,Starter,Medium,30
+Pad See Ew,"rice noodle, chicken, egg, pak choi, soy sauce, garlic","Wide noodles stir-fried with chicken and greens.",Thai,Main,Medium,25
+Thai Green Curry,"chicken thigh, green curry paste, coconut milk, aubergine, bamboo shoot, basil, rice","Fragrant Thai green chicken curry.",Thai,Main,Medium,30
+Thai Red Curry,"prawn, red curry paste, coconut milk, bell pepper, bamboo shoot, basil, rice","Spicy Thai red curry with prawns.",Thai,Main,Medium,30
+Massaman Curry,"beef, potato, onion, massaman curry paste, coconut milk, peanut, rice","Rich Thai beef curry with peanuts.",Thai,Main,Hard,90
+Tom Yum Soup,"prawn, mushroom, lemongrass, lime, chili, fish sauce, coriander, chicken stock","Hot and sour Thai soup.",Thai,Soup,Medium,25
+Tom Kha Gai,"chicken, coconut milk, galangal, lemongrass, mushroom, lime, fish sauce, coriander","Creamy coconut chicken soup.",Thai,Soup,Medium,25
+Bibimbap,"rice, beef mince, spinach, carrot, courgette, egg, gochujang, sesame oil","Korean rice bowl with mixed toppings and fried egg.",Korean,Main,Medium,35
+Kimchi Fried Rice,"rice, kimchi, egg, spring onion, soy sauce, sesame oil","Spicy Korean fried rice with kimchi.",Korean,Main,Easy,20
+Bulgogi Beef,"beef, soy sauce, sugar, garlic, pear, sesame oil, spring onion, rice","Sweet and savoury marinated grilled beef.",Korean,Main,Medium,30
+Japchae,"sweet potato noodle, beef, carrot, mushroom, spinach, soy sauce, sesame oil","Korean glass noodles with beef and vegetables.",Korean,Main,Medium,35
+Korean Fried Chicken,"chicken wing, flour, cornflour, gochujang, garlic, soy sauce, honey, sesame seed","Crispy chicken in sticky spicy sauce.",Korean,Main,Hard,60
+Tofu Buddha Bowl,"brown rice, tofu, broccoli, sweet potato, chickpea, spinach, tahini, lemon","Healthy bowl with roasted tofu and veg.",International,Main,Easy,30
+Roasted Veg Traybake,"potato, carrot, parsnip, red onion, bell pepper, olive oil, rosemary, thyme","Mixed roasted vegetables in one tray.",International,Side,Easy,45
+Stuffed Sweet Potatoes,"sweet potato, black bean, sweetcorn, cheddar, spring onion, yogurt","Baked sweet potatoes filled with beans and cheese.",International,Main,Easy,35
+Chickpea Spinach Curry,"chickpea, spinach, onion, garlic, ginger, tomato, curry powder, coconut milk","Creamy vegan chickpea and spinach curry.",Indian,Main,Easy,30
+Aloo Gobi,"potato, cauliflower, onion, tomato, garlic, ginger, turmeric, cumin, coriander","Dry spiced potato and cauliflower curry.",Indian,Main,Medium,35
+Palak Paneer,"spinach, paneer, onion, garlic, ginger, cream, garam masala","Spinach curry with paneer cheese.",Indian,Main,Medium,35
+Chicken Tikka Masala,"chicken thigh, yogurt, tikka spice, tomato, cream, onion, garlic, ginger","Creamy orange chicken curry.",Indian,Main,Medium,40
+Rogan Josh,"lamb, onion, tomato, yogurt, garlic, ginger, cardamom, chili","Kashmiri-style lamb curry.",Indian,Main,Hard,90
+Fish Curry,"white fish, coconut milk, tomato, onion, curry powder, chili, coriander","Mild coconut fish curry.",Indian,Main,Medium,30
+Jerk Chicken,"chicken leg, allspice, thyme, chili, garlic, ginger, brown sugar, lime, rice","Spicy Caribbean jerk chicken.",Caribbean,Main,Medium,45
+Rice and Peas,"rice, kidney bean, coconut milk, thyme, spring onion, garlic","Jamaican-style rice and beans.",Caribbean,Side,Medium,35
+Caribbean Fish Stew,"white fish, tomato, bell pepper, onion, thyme, chili, coconut milk","Spicy coconut fish stew.",Caribbean,Main,Medium,35
+Plantain Curry,"plantain, chickpea, tomato, onion, garlic, curry powder, coconut milk","Sweet and savoury plantain curry.",Caribbean,Main,Medium,35
+Shrimp Gumbo,"prawn, andouille sausage, okra, onion, celery, bell pepper, flour, butter, chicken stock","Louisiana-style thick stew.",Cajun,Main,Hard,90
+Jambalaya,"rice, chicken thigh, andouille sausage, prawn, tomato, onion, celery, bell pepper, cajun spice","One-pot Louisiana rice dish.",Cajun,Main,Medium,50
+Chicken Pot Pie,"chicken breast, carrot, pea, onion, butter, flour, milk, puff pastry","Creamy chicken and veg topped with flaky pastry.",British,Main,Hard,60
+Veggie Pot Pie,"broccoli, carrot, pea, potato, onion, butter, flour, milk, puff pastry","Vegetable pie with creamy sauce and pastry lid.",British,Main,Hard,60
+Toad in the Hole,"sausage, flour, egg, milk, onion, gravy, oil","Sausages baked in Yorkshire pudding batter.",British,Main,Medium,45
+Beef Wellington,"beef fillet, mushroom, puff pastry, prosciutto, mustard, egg","Beef fillet wrapped in pastry with mushroom duxelles.",British,Main,Hard,120
+Chicken Fajita Pasta,"pasta, chicken breast, bell pepper, onion, fajita seasoning, cream, cheddar","One-pot creamy fajita-flavoured pasta.",Mexican,Main,Medium,30
+BBQ Pulled Chicken Sandwich,"chicken thigh, bbq sauce, burger bun, coleslaw, pickle","Shredded BBQ chicken in a soft bun.",American,Main,Medium,30
+Philly Cheese Steak Sandwich,"beef steak, onion, bell pepper, provolone, baguette, butter","Sliced beef and melted cheese in a roll.",American,Lunch,Medium,25
+Sloppy Joe,"beef mince, onion, tomato sauce, mustard, brown sugar, burger bun","Sweet and tangy beef mince in a bun.",American,Main,Easy,25
+Hot Dog with Onions,"sausage, hot dog bun, onion, mustard, ketchup","Grilled sausage in a bun with fried onions.",American,Snack,Easy,15
+Baked Potato with Beans,"potato, baked bean, cheddar, butter, salt, pepper","Jacket potato topped with beans and cheese.",British,Main,Easy,60
+Baked Potato with Tuna Mayo,"potato, tuna, mayo, sweetcorn, cheddar, butter","Stuffed baked potato with tuna mayo.",British,Main,Easy,60
+Greek Chicken Traybake,"chicken thigh, potato, red onion, tomato, olive, oregano, lemon, olive oil","Oven tray of chicken and Greek-style vegetables.",Greek,Main,Easy,45
+Shish Kebab,"lamb, bell pepper, red onion, garlic, paprika, olive oil, flatbread, yogurt","Grilled lamb skewers served with bread.",Turkish,Main,Medium,30
+Menemen,"egg, tomato, green pepper, onion, olive oil, chili, bread","Turkish scrambled eggs with tomato and pepper.",Turkish,Breakfast,Easy,20
+Turkish Lentil Soup,"red lentil, onion, carrot, tomato paste, butter, paprika, stock","Smooth red lentil soup.",Turkish,Soup,Easy,30
+Fried Rice with Sausage,"rice, sausage, egg, peas, carrot, soy sauce, spring onion","Quick fried rice using sliced sausage.",Chinese,Main,Easy,20
+Garlic Butter Shrimp,"prawn, garlic, butter, lemon, parsley, rice","Fast pan-fried prawns in garlic butter.",International,Main,Easy,20
+Miso Soup,"miso paste, tofu, wakame, spring onion, dashi stock","Simple Japanese miso soup.",Japanese,Soup,Easy,10
+Onigiri,"rice, nori, tuna, mayo, soy sauce, salt","Japanese rice balls with tuna mayo filling.",Japanese,Snack,Medium,25
+Sushi Bowl,"rice, salmon, cucumber, avocado, nori, soy sauce, sesame seed","Deconstructed sushi in a bowl.",Japanese,Main,Medium,25
+Halloumi Salad,"halloumi, lettuce, tomato, cucumber, olive, red onion, lemon, olive oil","Grilled halloumi over fresh salad.",Mediterranean,Main,Easy,20
+Halloumi Wrap,"halloumi, tortilla, lettuce, tomato, cucumber, yogurt, chili sauce","Warm wrap with grilled halloumi and salad.",Mediterranean,Lunch,Easy,20
+Pork Stir Fry,"pork loin, broccoli, carrot, bell pepper, soy sauce, garlic, ginger, spring onion","Quick pork and vegetable stir fry.",Asian,Main,Easy,20
+Pork Schnitzel,"pork loin, flour, egg, breadcrumb, lemon, potato, oil","Crumbed fried pork cutlet.",German,Main,Medium,30
+Bratwurst with Sauerkraut,"bratwurst, sauerkraut, potato, mustard, butter","German sausage with sauerkraut and potatoes.",German,Main,Easy,30
+Goulash,"beef, onion, paprika, tomato, potato, caraway seed, beef stock","Hungarian-style paprika beef stew.",Hungarian,Main,Hard,90
+Chicken Nasi Goreng,"rice, chicken breast, egg, soy sauce, kecap manis, spring onion, chili","Indonesian fried rice with chicken.",Indonesian,Main,Medium,30
+Satay Chicken Skewers,"chicken breast, peanut butter, soy sauce, garlic, ginger, lime, skewers","Grilled chicken skewers with peanut marinade.",Indonesian,Starter,Medium,30
+Peanut Noodle Salad,"noodle, peanut butter, soy sauce, lime, carrot, cucumber, coriander","Cold noodles in peanut-lime dressing.",Asian,Main,Easy,20
+Lentil Bolognese,"pasta, red lentil, tomato, onion, carrot, celery, garlic, olive oil","Vegetarian bolognese-style pasta.",Italian,Main,Easy,30
+Quinoa Salad with Feta,"quinoa, cucumber, tomato, red onion, feta, olive, lemon, olive oil","Protein-packed salad with quinoa and feta.",Mediterranean,Main,Easy,25
+Stuffed Courgettes,"courgette, rice, beef mince, onion, tomato, garlic, cheddar","Baked courgettes filled with beef and rice.",International,Main,Medium,45
+Egg Fried Noodles,"noodle, egg, spring onion, soy sauce, carrot, cabbage, sesame oil","Pan-fried noodles with scrambled egg and veg.",Chinese,Main,Easy,20
+Thai Beef Salad,"beef steak, lettuce, cucumber, tomato, carrot, lime, fish sauce, chili, coriander","Fresh salad with thin-sliced marinated beef.",Thai,Main,Medium,30
+Cauliflower Cheese,"cauliflower, cheddar, milk, butter, flour, mustard, breadcrumb","Baked cauliflower in cheese sauce.",British,Side,Medium,35
+Cheesy Broccoli Bake,"broccoli, cheddar, milk, butter, flour, breadcrumb, garlic","Broccoli with cheesy creamy sauce baked in the oven.",British,Side,Medium,30
+Tomato Mozzarella Panini,"ciabatta, mozzarella, tomato, pesto, butter","Toasted panini with tomato, mozzarella and pesto.",Italian,Lunch,Easy,15
+Chicken Pesto Panini,"ciabatta, chicken breast, mozzarella, pesto, butter","Grilled sandwich with chicken and pesto.",Italian,Lunch,Medium,20
+Spinach Feta Omelette,"egg, spinach, feta, butter, salt, pepper","Fluffy omelette with spinach and feta.",International,Breakfast,Easy,15
+Spanish Omelette,"egg, potato, onion, olive oil, salt","Thick Spanish tortilla with potato and onion.",Spanish,Main,Medium,35
+Paella,"rice, prawn, mussel, chicken thigh, chorizo, bell pepper, tomato, saffron, stock","Classic Spanish rice dish with meat and seafood.",Spanish,Main,Hard,60
+Patatas Bravas,"potato, tomato, garlic, paprika, chili, mayo, olive oil","Fried potatoes with spicy tomato sauce and aioli.",Spanish,Side,Medium,35
+Tortilla Wrap Pizza,"tortilla, tomato sauce, mozzarella, pepperoni, bell pepper","Quick pizza made on a tortilla base.",International,Snack,Easy,15
+Mini Egg Muffins,"egg, cheddar, spinach, tomato, bell pepper, muffin tin","Baked egg cups ideal for breakfast prep.",International,Breakfast,Easy,25
+Overnight Oats,"oat, milk, yogurt, chia seed, honey, strawberry","No-cook oats soaked overnight with fruit.",International,Breakfast,Easy,10
+Granola Bars,"oat, honey, peanut butter, almond, raisin, chocolate chip","Baked snack bars with oats and nuts.",International,Snack,Medium,30
+Spinach Chickpea Stew,"spinach, chickpea, onion, garlic, tomato, cumin, paprika","One-pot hearty spinach and chickpea stew.",International,Main,Easy,30
+Butternut Squash Soup,"butternut squash, carrot, onion, garlic, vegetable stock, cream, nutmeg","Sweet roasted squash blended into soup.",International,Soup,Easy,35
+Leek and Potato Soup,"leek, potato, onion, butter, vegetable stock, cream","Comforting creamy leek and potato soup.",British,Soup,Easy,30
+Mushroom Soup,"mushroom, onion, garlic, butter, flour, vegetable stock, cream","Velvety mushroom soup.",International,Soup,Medium,30
+Chicken Noodle Casserole,"chicken breast, egg noodle, carrot, pea, onion, cream of mushroom soup, cheddar","Baked chicken noodle dish with creamy sauce.",American,Main,Medium,40
+Duck Fried Rice,"duck breast, rice, egg, spring onion, soy sauce, carrot, peas, sesame oil","Rich fried rice using crispy sliced duck.",Chinese,Main,Medium,25
+Roast Duck with Orange Glaze,"duck breast, orange, honey, soy sauce, garlic, butter","Crispy duck with sweet orange glaze.",French,Main,Hard,60
+Turkey Chili,"turkey mince, kidney bean, tomato, onion, garlic, chili powder, cumin","Lean turkey version of classic chili.",American,Main,Medium,40
+Turkey Meatballs,"turkey mince, breadcrumb, egg, garlic, parmesan, tomato sauce, spaghetti","Light turkey meatballs in tomato sauce.",Italian,Main,Medium,30
+Turkey Stir Fry,"turkey breast, broccoli, carrot, soy sauce, garlic, ginger, spring onion","Healthy stir fry with turkey strips.",Asian,Main,Easy,20
+Pork Belly Ramen,"pork belly, ramen noodle, soy sauce, miso, nori, spring onion, egg","Slow-braised pork belly ramen bowl.",Japanese,Main,Hard,120
+Crispy Pork Belly,"pork belly, salt, pepper, five spice, oil","Crunchy crackling pork belly.",Chinese,Main,Medium,90
+Pork Adobo,"pork belly, soy sauce, vinegar, garlic, bay leaf, rice","Filipino sour-salty braised pork.",Filipino,Main,Medium,60
+Chicken Adobo,"chicken thigh, soy sauce, vinegar, garlic, bay leaf, rice","Classic Filipino chicken adobo.",Filipino,Main,Easy,45
+Lumpia,"pork mince, carrot, spring onion, garlic, wrapper, soy sauce","Filipino crispy spring rolls.",Filipino,Starter,Medium,40
+Beef Bibimbap,"rice, beef mince, carrot, spinach, courgette, egg, gochujang, sesame oil","Korean mixed rice bowl with beef.",Korean,Main,Medium,35
+Kimchi Stew,"kimchi, pork belly, tofu, onion, garlic, chili paste, stock","Spicy Korean kimchi and tofu stew.",Korean,Main,Medium,40
+Spicy Cold Noodles,"noodle, cucumber, carrot, chili paste, soy sauce, sesame oil, sugar","Korean-style cold spicy noodles.",Korean,Main,Easy,20
+Chicken Fatteh,"chicken breast, yogurt, garlic, chickpea, pita, butter, pine nut","Lebanese layered chicken with crispy pita.",Lebanese,Main,Medium,35
+Beef Shawarma Rice,"beef, shawarma spice, rice, lettuce, tomato, tahini","Rice bowl version of beef shawarma.",Middle Eastern,Main,Medium,30
+Falafel Mezze Plate,"falafel, hummus, pita, cucumber, tomato, pickle, tahini","Complete vegetarian mezze plate.",Middle Eastern,Main,Easy,25
+Shish Tawook,"chicken breast, yogurt, garlic, lemon, paprika, skewers","Lebanese chicken skewers.",Lebanese,Main,Medium,30
+Mujadara,"lentil, rice, onion, cumin, olive oil","Lebanese lentils and rice with crispy onions.",Middle Eastern,Main,Easy,40
+Seafood Paella,"rice, prawn, mussel, squid, tomato, saffron, bell pepper, stock","Spanish seafood rice dish.",Spanish,Main,Hard,70
+Chorizo Paella,"rice, chorizo, chicken thigh, bell pepper, tomato, saffron, stock","Smoky chorizo and chicken paella.",Spanish,Main,Medium,60
+Gambas al Ajillo,"prawn, garlic, chili, olive oil, parsley, bread","Spanish garlic shrimp.",Spanish,Starter,Easy,15
+Prawn Jollof Rice,"rice, prawn, tomato, onion, chili, bell pepper, stock","West African spicy rice with prawns.",West African,Main,Medium,45
+Chicken Jollof,"rice, chicken thigh, tomato, onion, chili, stock","West African famous jollof rice.",West African,Main,Medium,50
+Beef Suya,"beef steak, suya spice, peanut powder, chili, oil","Nigerian grilled spicy skewers.",Nigerian,Main,Medium,25
+Ethiopian Lentils (Misir Wot),"red lentil, onion, garlic, ginger, berbere spice, tomato, butter","Spicy Ethiopian red lentil stew.",Ethiopian,Main,Medium,35
+Injera Wrap,"injera, chicken, onion, berbere, garlic, ginger","Ethiopian-style injera wraps.",Ethiopian,Main,Medium,40
+Brazilian Feijoada,"black bean, pork belly, sausage, onion, garlic, rice","Black bean and pork stew.",Brazilian,Main,Hard,120
+Moqueca Fish Stew,"white fish, coconut milk, tomato, onion, bell pepper, coriander, lime","Brazilian coconut fish stew.",Brazilian,Main,Medium,35
+Pão de Queijo,"tapioca flour, cheese, egg, milk, butter","Brazilian cheesy rolls.",Brazilian,Snack,Medium,40
+Peri Peri Chicken,"chicken thigh, peri peri sauce, lemon, garlic, paprika","Spicy Portuguese chicken.",Portuguese,Main,Medium,40
+Cod Fish Cakes,"cod, potato, parsley, onion, egg, flour","Portuguese-style cod cakes.",Portuguese,Starter,Medium,30
+Hungarian Chicken Paprikash,"chicken thigh, paprika, onion, garlic, sour cream, stock","Creamy paprika chicken stew.",Hungarian,Main,Medium,40
+Beef Stroganoff,"beef strips, mushroom, onion, sour cream, mustard, pasta","Russian creamy beef and mushroom dish.",Russian,Main,Medium,30
+Chicken Kiev,"chicken breast, garlic butter, breadcrumb, egg, flour","Crispy chicken filled with garlic butter.",Ukrainian,Main,Hard,45
+Pierogi,"flour, potato, onion, cheese, butter","Polish stuffed dumplings.",Polish,Main,Hard,60
+Polish Cabbage Rolls (Golabki),"cabbage, beef mince, rice, onion, tomato sauce","Polish stuffed cabbage rolls.",Polish,Main,Medium,90
+Irish Beef Stew,"beef, potato, carrot, onion, stock, thyme","Rich and hearty Irish stew.",Irish,Main,Medium,120
+Colcannon,"potato, cabbage, butter, milk, salt","Mashed potato with cabbage.",Irish,Side,Easy,30
+Sausage Casserole,"sausage, tomato, onion, garlic, butter bean, stock","Comforting sausage and bean stew.",British,Main,Easy,45
+Beef Pie,"beef chuck, onion, carrot, celery, pastry, stock","Classic British beef pie.",British,Main,Hard,90
+Lancashire Hotpot,"lamb, potato, onion, stock, thyme","Lamb stew topped with sliced potatoes.",British,Main,Medium,90
+Fish Pie,"white fish, salmon, milk, butter, flour, potato, cheddar","Creamy fish filling topped with mash.",British,Main,Hard,70
+Crab Fried Rice,"crab meat, rice, egg, spring onion, soy sauce, garlic","Light and fragrant crab fried rice.",Asian,Main,Medium,20
+Honey Garlic Salmon,"salmon fillet, honey, garlic, soy sauce, lemon","Sweet and savoury salmon fillet.",International,Main,Easy,20
+Teriyaki Tofu,"tofu, soy sauce, ginger, garlic, sugar, spring onion, rice","Crispy tofu in sticky teriyaki sauce.",Japanese,Main,Medium,25
+Garlic Butter Cod,"cod fillet, garlic, butter, lemon, parsley","Soft cod baked in garlic butter.",International,Main,Easy,20
+Scallop Pasta,"scallop, spaghetti, garlic, lemon, cream, parsley, butter","Creamy pasta topped with seared scallops.",Italian,Main,Medium,25
+Cajun Salmon Pasta,"salmon fillet, pasta, cream, cajun spice, garlic, parmesan","Creamy spicy salmon pasta.",American,Main,Medium,25
+BBQ Ribs,"pork ribs, bbq sauce, brown sugar, garlic, onion","Slow-cooked sticky BBQ ribs.",American,Main,Hard,180
+Pork Sausage Pasta,"sausage, pasta, tomato, garlic, cream, spinach","Creamy pasta with sausage pieces.",Italian,Main,Medium,25
+Beef Meatball Sub,"beef mince, breadcrumb, egg, garlic, baguette, tomato sauce, mozzarella","Meatballs baked in a cheesy sub roll.",American,Lunch,Medium,30
+Tandoori Chicken,"chicken thigh, yogurt, tandoori spice, lemon, garlic","Indian-style oven-baked tandoori chicken.",Indian,Main,Medium,40
+Paneer Tikka,"paneer, yogurt, chili, lemon, garlic, bell pepper","Grilled Indian spiced paneer skewers.",Indian,Starter,Medium,25
+Vegetable Biryani,"rice, carrot, pea, bell pepper, onion, biryani spice, yogurt","Aromatic mixed vegetable biryani.",Indian,Main,Medium,45
+Lamb Biryani,"rice, lamb, onion, yogurt, biryani spice, mint","Fragrant layered lamb biryani.",Indian,Main,Hard,90
+Chicken Korma,"chicken thigh, yogurt, cream, onion, garlic, ginger, cashew, curry powder","Creamy mild Indian curry.",Indian,Main,Medium,40
+Beef Udon Stir Fry,"beef strips, udon noodle, soy sauce, garlic, mushroom, spring onion","Thick udon noodles with beef.",Japanese,Main,Medium,20
+Chicken Yakisoba,"chicken breast, yakisoba noodle, cabbage, carrot, soy sauce, ginger","Japanese stir-fried noodles.",Japanese,Main,Easy,20
+Coconut Chickpea Curry,"chickpea, coconut milk, tomato, spinach, curry powder, garlic","Rich vegan chickpea curry.",Indian,Main,Easy,25
+Beetroot Salad,"beetroot, feta, walnut, rocket, balsamic vinegar, olive oil","Colourful beetroot and feta salad.",Mediterranean,Side,Easy,15
+Halloumi Couscous,"halloumi, couscous, tomato, cucumber, lemon, olive oil","Couscous bowl topped with grilled halloumi.",Mediterranean,Main,Easy,20
+Sweet Potato Tacos,"sweet potato, black bean, tortilla, salsa, avocado, lime","Vegetarian tacos with roasted sweet potato.",Mexican,Main,Easy,25
+Crab Pasta,"crab meat, spaghetti, garlic, chili, lemon, parsley, butter","Light pasta with crab and lemon.",Italian,Main,Medium,25
+Shrimp Alfredo,"prawn, pasta, cream, garlic, parmesan, butter","Creamy Alfredo pasta with prawns.",Italian,Main,Medium,25

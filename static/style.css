@@ -349,3 +349,42 @@ body {
         width: 100%;
     }
 }
+.cook-green { color: #4ade80; font-weight: 600; }
+.cook-yellow { color: #facc15; font-weight: 600; }
+.cook-red { color: #ef4444; font-weight: 600; }
+
+.missing-list {
+    color: #f87171;
+    font-size: 0.9rem;
+}
+
+.cook-green {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.cook-yellow {
+    color: #facc15;
+    font-weight: 600;
+}
+
+.cook-red {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.missing-list {
+    color: #f87171;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0.4rem;
+}
+
+.meta-line {
+    margin: 0.15rem 0 0.5rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.meta-line span {
+    margin-right: 0.25rem;
+}
