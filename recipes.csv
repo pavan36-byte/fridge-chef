@@ -1,6 +1,4 @@
 name,ingredients,description,cuisine,type,difficulty,time_minutes
-
-name,ingredients,description,cuisine,type,difficulty,time_minutes
 Margherita Pizza,"flour, yeast, water, salt, tomato, mozzarella, basil","Classic Italian pizza with tomato, mozzarella and basil.",Italian,Main,Easy,25
 Pepperoni Pizza,"flour, yeast, water, salt, tomato, mozzarella, pepperoni","Crispy pizza topped with spicy pepperoni.",Italian,Main,Easy,25
 BBQ Chicken Pizza,"flour, yeast, water, salt, bbq sauce, mozzarella, chicken, red onion","Sweet and smoky BBQ chicken pizza.",American,Main,Medium,30

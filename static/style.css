@@ -388,3 +388,21 @@ body {
 .meta-line span {
     margin-right: 0.25rem;
 }
+.ai-explanation {
+    background: #2b2142;
+    border-left: 4px solid #a855f7;
+    padding: 10px 14px;
+    margin-top: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #e9d5ff;
+    font-style: italic;
+}
+.error-msg {
+    color: #f87171;
+    margin-top: 8px;
+    text-align: center;
+}
+.no-results {
+    color: #9ca3af;
+}
