@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fridge Chef</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
@@ -14,78 +14,124 @@
 </header>
 
 <main class="main">
+
 <section class="input-section">
-    <form method="post" class="input-form">
+    <form method="post" class="ingredient-form">
         <input
             type="text"
             name="ingredients"
-            class="input-box"
             placeholder="Tell me what food you have..."
             value="{{ user_input }}"
         >
-        <button type="submit" class="submit-btn">Find Recipes</button>
+
+        <div class="form-row-right">
+            <select name="sort_by" class="sort-select">
+                <option value="best_match">Best Match</option>
+                <option value="least_missing">Least Missing</option>
+                <option value="simplest">Simplest</option>
+            </select>
+
+            <button type="submit">Find Recipes</button>
+        </div>
     </form>
 
     {% if error %}
-        <p class="error-msg">{{ error }}</p>
+        <p class="alert alert-error">{{ error }}</p>
+    {% endif %}
+
+    {% if history %}
+    <div class="history">
+        <div class="history-header">
+            <span class="history-title">Recent searches</span>
+        </div>
+
+        <div class="history-chips">
+            {% for item in history %}
+            <form method="post" class="history-form">
+                <input type="hidden" name="ingredients" value="{{ item }}">
+                <button class="history-chip">{{ item }}</button>
+            </form>
+            {% endfor %}
+        </div>
+    </div>
     {% endif %}
 </section>
 
+
+
 <section class="results-section">
+
 {% if suggestions %}
-    <h2 class="section-title">Recipes you can try:</h2>
-    <div class="recipes-grid">
+<h2 class="section-title">Recipes you can try:</h2>
 
-    {% for r in suggestions %}
-        <article class="recipe-card">
+<div class="recipes-grid">
 
-            <div class="recipe-card-header">
-                <h3 class="recipe-name">{{ r.name }}</h3>
-            </div>
+{% for r in suggestions %}
+<article class="recipe-card">
 
-            <div class="match-row">
-                <span class="match-label">{{ r.match_percent }}% match</span>
-                <div class="match-bar-outer">
-                    <div class="match-bar-inner" style="width: {{ r.match_percent }}%;"></div>
-                </div>
-                <span class="match-meta">{{ r.matched }}/{{ r.total }} ingredients</span>
-            </div>
+    <div class="recipe-card-header">
+        <h3 class="recipe-name">{{ r.name }}</h3>
 
-            <div class="cookability">
-                {% if r.cookability == "can_cook" %}
-                    <span class="cook-green">✅ You can cook this!</span>
-                {% elif r.cookability == "almost" %}
-                    <span class="cook-yellow">🟡 Almost — missing {{ r.missing|length }} ingredient{% if r.missing|length != 1 %}s{% endif %}</span>
+        <form method="post" action="/fav" class="fav-form">
+            <input type="hidden" name="recipe_name" value="{{ r.name }}">
+            <button class="fav-btn" type="submit">
+                {% if r.is_favourite %}
+                    ★ Favourite
                 {% else %}
-                    <span class="cook-red">🔴 Missing too many ingredients</span>
+                    ☆ Save
                 {% endif %}
-            </div>
-
-            {% if r.missing %}
-            <p class="missing-list"><strong>Missing:</strong> {{ r.missing | join(", ") }}</p>
-            {% endif %}
-
-            <p class="meta-line">
-                <span>🌍 {{ r.cuisine }}</span> ·
-                <span>🍽 {{ r.type }}</span> ·
-                <span>⚙ {{ r.difficulty }}</span> ·
-                <span>⏱ {{ r.time_minutes }} min</span>
-            </p>
-
-            <p class="recipe-ings"><strong>Ingredients:</strong> {{ r.ingredients | join(", ") }}</p>
-            <p class="recipe-desc">{{ r.description }}</p>
-
-            {% if r.explanation %}
-            <p class="ai-explanation">🤖 {{ r.explanation }}</p>
-            {% endif %}
-
-        </article>
-    {% endfor %}
+            </button>
+        </form>
     </div>
 
+    <div class="match-row">
+        <span class="match-label">{{ r.match_percent }}% match</span>
+        <div class="match-bar-outer">
+            <div class="match-bar-inner" style="width: {{ r.match_percent }}%;"></div>
+        </div>
+        <span class="match-meta">{{ r.matched }}/{{ r.total }} ingredients</span>
+    </div>
+
+    <div class="cookability">
+        {% if r.cookability == "can_cook" %}
+            <span class="cook-green">✅ You can cook this!</span>
+        {% elif r.cookability == "almost" %}
+            <span class="cook-yellow">🟡 Almost — missing {{ r.missing|length }} ingredient{% if r.missing|length != 1 %}s{% endif %}</span>
+        {% else %}
+            <span class="cook-red">🔴 Missing too many ingredients</span>
+        {% endif %}
+    </div>
+
+    {% if r.missing %}
+    <p class="missing-list"><strong>Missing:</strong> {{ r.missing | join(", ") }}</p>
+    {% endif %}
+
+    <p class="meta-line">
+        <span>🌍 {{ r.cuisine }}</span> ·
+        <span>🍽 {{ r.type }}</span> ·
+        <span>⚙ {{ r.difficulty }}</span> ·
+        <span>⏱ {{ r.time_minutes }} min</span>
+    </p>
+
+    <p class="recipe-ings">
+        <strong>Ingredients:</strong> {{ r.ingredients | join(", ") }}
+    </p>
+
+    <p class="recipe-desc">{{ r.description }}</p>
+
+    {% if r.explanation %}
+    <p class="ai-explanation">🤖 {{ r.explanation }}</p>
+    {% endif %}
+
+</article>
+{% endfor %}
+
+</div>
+
 {% elif not error and user_input %}
-    <p class="no-results">No recipes found. Try different ingredients.</p>
+<p class="no-results">No recipes found. Try different ingredients.</p>
 {% endif %}
+
 </section>
 
 </main>

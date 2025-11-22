@@ -5,5 +5,8 @@
     "chicken, pepper",
     "chicken, bellpepper"
   ],
-  "favourites": []
+  "favourites": [],
+  "history": [
+    "beef, rice, bread, flour"
+  ]
 }
